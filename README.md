@@ -1,1 +1,0 @@
-# meduardoscervantes.github.io
