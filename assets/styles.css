@@ -12,7 +12,11 @@
   --white: #fff;
   --gray: #868e96;
   --gray-dark: #343a40;
-  --primary: #593196;
+  --primary: #5d5850;
+  --primary-accent: #b37053;
+  --primary-tertiary: #c5ba79;
+  --primary-4th: #d8e0c1;
+  --primary-5th: #b4cdcf;
   --secondary: #A991D4;
   --success: #13B955;
   --info: #009CDC;
@@ -50,7 +54,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: rgb(255, 255, 255);
-  background-color: rgba(32, 26, 33, 0.635);
+  background-color: var(--primary);
   text-align: left;}
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -130,7 +134,7 @@ a {
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #371e5c;
+    color: var(--primary-tertiary);
     text-decoration: underline; }
 
 a:not([href]) {
@@ -1760,7 +1764,6 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #444;
   text-align: center;
   vertical-align: middle;
   user-select: none;
@@ -1779,7 +1782,7 @@ textarea.form-control {
     text-decoration: none; }
   .btn:focus, .btn.focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(89, 49, 150, 0.25); }
+    box-shadow: 0 0 0 0.2rem var(--primary-accent); }
   .btn.disabled, .btn:disabled {
     opacity: 0.65; }
   .btn:not(:disabled):not(.disabled) {
@@ -2167,10 +2170,10 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #593196;
+  color: #ffffff;
   text-decoration: none; }
   .btn-link:hover {
-    color: #371e5c;
+    color: var(--primary-tertiary);
     text-decoration: underline; }
   .btn-link:focus, .btn-link.focus {
     text-decoration: underline; }
@@ -3071,7 +3074,8 @@ input[type="button"].btn-block {
   line-height: inherit;
   white-space: nowrap; }
   .navbar-brand:hover, .navbar-brand:focus {
-    text-decoration: none; }
+    color: var(--primary-tertiary);
+    text-decoration: underline; }
 
 .navbar-nav {
   display: flex;
@@ -3312,7 +3316,7 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: var(--primary-accent);
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem; }
@@ -3332,6 +3336,7 @@ input[type="button"].btn-block {
       border-bottom-left-radius: calc(0.25rem - 1px); }
 
 .card-body {
+  background-color: var(--primary-tertiary);
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem; }
@@ -4690,7 +4695,7 @@ a.close.disabled {
   vertical-align: text-top !important; }
 
 .bg-primary {
-  background-color: #593196 !important; }
+  background-color: var(--primary-accent) !important; }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
