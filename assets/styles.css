@@ -38,6 +38,8 @@
   box-sizing: border-box; }
 
 html {
+  font-size: 1.25rem;
+  font-weight: 300;
   font-family: sans-serif;
   line-height: 1.15;
   scroll-behavior: smooth;
