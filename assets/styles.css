@@ -4703,6 +4703,14 @@ a.close.disabled {
 .align-text-top {
   vertical-align: text-top !important; }
 
+.tertiary {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent; }
+  .tertiary:hover {
+    color: var(--dark);
+    text-decoration: underline; }
+
 .bg-primary {
   background-color: var(--primary-accent) !important; }
 

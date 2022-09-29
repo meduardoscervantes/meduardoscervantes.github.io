@@ -58,7 +58,7 @@
         </div>
     </div>
     <!--end of Table of Contents-->
-    
+
     <!--excel Projects-->
     <div class="container" id="excel">
         <div class="row">
@@ -73,63 +73,110 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="excel_accordion">
-    
                     <div class="card">
                         <div class="card-header" id="excel_0">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_excel_0"
-                                    aria-expanded="false" aria-controls="collapse_excel_0">
-                                    excel_0 Temp Holder
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse_excel_0" aria-expanded="false"
+                                    aria-controls="collapse_excel_0">
+                                    Charts and Pivot Tables
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse_excel_0" class="collapse" aria-labelledby="excel_0" data-parent="#excel_accordion">
+                        <div id="collapse_excel_0" class="collapse" aria-labelledby="excel_0"
+                            data-parent="#excel_accordion">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid. 3 wolf
-                                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                                laborum eiusmod.
-                                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                                assumenda
-                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                                nesciunt sapiente ea
-                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                farm-to-table, raw denim
-                                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                                VHS.
+                                <p>
+                                    The source data contains more than 4000 rows of data from a survey of Kickstarter projects.
+                                    The columns of the dataset are:
+                                        <a class="tertiary" data-toggle="collapse" href="#collapse_columns"
+                                            role="button" aria-expanded="false" aria-controls="collapse_columns">
+                                            Toggle Columns
+                                        </a>
+                                    <div class="collapse" id="collapse_columns">
+                                        <div class="card card-body">
+                                            <ul>
+                                                <li>id - int</li>
+                                                <li>name - Name of project - str</li>
+                                                <li>blurb - Description - str</li>
+                                                <li>goal - Value needed to succeed - int</li>
+                                                <li>pledged - Money raised - int</li>
+                                                <li>state - str</li>
+                                                <li>country - str</li>
+                                                <li>currency - str</li>
+                                                <li>deadline - Unix time - int</li>
+                                                <li>launched_at - Unix time - int</li>
+                                                <li>staff_pick - boolean</li>
+                                                <li>backers_count - Number of people supporting - int</li>
+                                                <li>spotlight - boolean</li>
+                                                <li>Category and Sub-Category - str</li>
+                                                <li>Percent Funded - str</li>
+                                                <li>Average Donation - str</li>
+                                                <li>Category - str</li>
+                                                <li>Sub-Category - str</li>
+                                                <li>Date Created Conversion - datetime</li>
+                                                <li>Date Ended Conversion - datetime</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                Other sheets in the file utililze pivot charts to compare the columns to each other.
+                                Charts are then generated from the pivot tables themselves!
+                                One of the sheets dives deeper into the analysis and finds the Mean, Median, Mode, Variance, and Standard Deviation for Succesfull and Failed Projects.
+                                </p>
+                                <a class="tertiary" href="https://github.com/meduardoscervantes/Excel-Challenge"
+                                    target="_blank" rel="noopener noreferrer">Checkout the work here!</a>
                             </div>
                         </div>
                     </div>
-            
                     <div class="card">
                         <div class="card-header" id="excel_1">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_excel_1"
-                                    aria-expanded="false" aria-controls="collapse_excel_1">
-                                    excel_1 Temp Holder
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse_excel_1" aria-expanded="false"
+                                    aria-controls="collapse_excel_1">
+                                    VBA
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse_excel_1" class="collapse" aria-labelledby="excel_1" data-parent="#excel_accordion">
+                        <div id="collapse_excel_1" class="collapse" aria-labelledby="excel_1"
+                            data-parent="#excel_accordion">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid. 3 wolf
-                                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                                laborum eiusmod.
-                                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                                assumenda
-                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                                nesciunt sapiente ea
-                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                farm-to-table, raw denim
-                                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                                VHS.
+                                <p>
+                                    The source data contains 753,000 rows of data about different stock data.
+                                    This is approaching the limit of a workable excel sheet.
+                                    The columns of the dataset are:
+                                        <a class="tertiary" data-toggle="collapse" href="#collapse_columns_vba"
+                                            role="button" aria-expanded="false" aria-controls="collapse_columns_vba">
+                                            Toggle Columns
+                                        </a>
+                                    <div class="collapse" id="collapse_columns_vba">
+                                        <div class="card card-body">
+                                            <ul>
+                                                <li>&#60;ticker&#62; - Stock ticker abbreviation - str</li>
+                                                <li>&#60;date&#62; - Date of the values taken (YYYMMDD) - datetime</li>
+                                                <li>&#60;open&#62; - Opening value for that day - double</li>
+                                                <li>&#60;high&#62; - Highest value for that day - double</li>
+                                                <li>&#60;low&#62; - Lowest value for that day - double</li>
+                                                <li>&#60;close&#62; - Closing value for that day - int</li>
+                                                <li>&#60;vol&#62; - Total volume of stocks for that day - str</li>
+                                                <li>Ticker - Stock ticker abbreviation - str</li>
+                                                <li>Yearly Change - Initial open value minus final close value - double</li>
+                                                <li>Percentage Changed - Initial open value minus final close value percentage - str</li>
+                                                <li>Total Stock Volume - Total stocks traded - int</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                There are 3 sheets in the workbook that take a look at three different years (2014, 2015, 2016) of stock data.
+                                By running the VBA macro once, ALL of the sheets are analyzed and find the Greatest Percentage Increased, Greatest Percantage Decreased, and Greatest Total Stock Volume.
+                                Futhermore, the script colors in the Yearly Change column depending on its positive or negative value.
+                                </p>
+                                <a class="tertiary" href="https://github.com/meduardoscervantes/VBA-Challenge"
+                                    target="_blank" rel="noopener noreferrer">Checkout the work here!</a>
                             </div>
                         </div>
                     </div>
-            
                 </div>
-            <hr>
+                <hr>
             </div>
         </div>
     </div>
@@ -148,17 +195,19 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="python_accordion">
-    
+
                     <div class="card">
                         <div class="card-header" id="python_0">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_python_0"
-                                    aria-expanded="false" aria-controls="collapse_python_0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse_python_0" aria-expanded="false"
+                                    aria-controls="collapse_python_0">
                                     python_0 Temp Holder
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse_python_0" class="collapse" aria-labelledby="python_0" data-parent="#python_accordion">
+                        <div id="collapse_python_0" class="collapse" aria-labelledby="python_0"
+                            data-parent="#python_accordion">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                                 squid. 3 wolf
@@ -175,17 +224,19 @@
                             </div>
                         </div>
                     </div>
-            
+
                     <div class="card">
                         <div class="card-header" id="python_1">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_python_1"
-                                    aria-expanded="false" aria-controls="collapse_python_1">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse_python_1" aria-expanded="false"
+                                    aria-controls="collapse_python_1">
                                     python_1 Temp Holder
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse_python_1" class="collapse" aria-labelledby="python_1" data-parent="#python_accordion">
+                        <div id="collapse_python_1" class="collapse" aria-labelledby="python_1"
+                            data-parent="#python_accordion">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                                 squid. 3 wolf
@@ -202,17 +253,19 @@
                             </div>
                         </div>
                     </div>
-            
+
                     <div class="card">
                         <div class="card-header" id="python_2">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_python_2"
-                                    aria-expanded="false" aria-controls="collapse_python_2">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse_python_2" aria-expanded="false"
+                                    aria-controls="collapse_python_2">
                                     python_2 Temp Holder
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse_python_2" class="collapse" aria-labelledby="python_2" data-parent="#python_accordion">
+                        <div id="collapse_python_2" class="collapse" aria-labelledby="python_2"
+                            data-parent="#python_accordion">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                                 squid. 3 wolf
@@ -229,17 +282,19 @@
                             </div>
                         </div>
                     </div>
-            
+
                     <div class="card">
                         <div class="card-header" id="python_3">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_python_3"
-                                    aria-expanded="false" aria-controls="collapse_python_3">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse_python_3" aria-expanded="false"
+                                    aria-controls="collapse_python_3">
                                     python_3 Temp Holder
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse_python_3" class="collapse" aria-labelledby="python_3" data-parent="#python_accordion">
+                        <div id="collapse_python_3" class="collapse" aria-labelledby="python_3"
+                            data-parent="#python_accordion">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                                 squid. 3 wolf
@@ -256,13 +311,13 @@
                             </div>
                         </div>
                     </div>
-            
+
                 </div>
-            <hr>
+                <hr>
             </div>
         </div>
     </div>
-    <!--end of python Projects-->  
+    <!--end of python Projects-->
     <!--big_data Projects-->
     <div class="container" id="big_data">
         <div class="row">
@@ -277,17 +332,19 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="big_data_accordion">
-    
+
                     <div class="card">
                         <div class="card-header" id="big_data_0">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_big_data_0"
-                                    aria-expanded="false" aria-controls="collapse_big_data_0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse_big_data_0" aria-expanded="false"
+                                    aria-controls="collapse_big_data_0">
                                     big_data_0 Temp Holder
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse_big_data_0" class="collapse" aria-labelledby="big_data_0" data-parent="#big_data_accordion">
+                        <div id="collapse_big_data_0" class="collapse" aria-labelledby="big_data_0"
+                            data-parent="#big_data_accordion">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                                 squid. 3 wolf
@@ -304,9 +361,9 @@
                             </div>
                         </div>
                     </div>
-            
+
                 </div>
-            <hr>
+                <hr>
             </div>
         </div>
     </div>
@@ -325,17 +382,19 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="databases_accordion">
-    
+
                     <div class="card">
                         <div class="card-header" id="databases_0">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_databases_0"
-                                    aria-expanded="false" aria-controls="collapse_databases_0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse_databases_0" aria-expanded="false"
+                                    aria-controls="collapse_databases_0">
                                     databases_0 Temp Holder
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse_databases_0" class="collapse" aria-labelledby="databases_0" data-parent="#databases_accordion">
+                        <div id="collapse_databases_0" class="collapse" aria-labelledby="databases_0"
+                            data-parent="#databases_accordion">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                                 squid. 3 wolf
@@ -352,17 +411,19 @@
                             </div>
                         </div>
                     </div>
-            
+
                     <div class="card">
                         <div class="card-header" id="databases_1">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_databases_1"
-                                    aria-expanded="false" aria-controls="collapse_databases_1">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse_databases_1" aria-expanded="false"
+                                    aria-controls="collapse_databases_1">
                                     databases_1 Temp Holder
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse_databases_1" class="collapse" aria-labelledby="databases_1" data-parent="#databases_accordion">
+                        <div id="collapse_databases_1" class="collapse" aria-labelledby="databases_1"
+                            data-parent="#databases_accordion">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                                 squid. 3 wolf
@@ -379,9 +440,9 @@
                             </div>
                         </div>
                     </div>
-            
+
                 </div>
-            <hr>
+                <hr>
             </div>
         </div>
     </div>
@@ -400,17 +461,19 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="machine_learning_accordion">
-    
+
                     <div class="card">
                         <div class="card-header" id="machine_learning_0">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_machine_learning_0"
-                                    aria-expanded="false" aria-controls="collapse_machine_learning_0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse_machine_learning_0" aria-expanded="false"
+                                    aria-controls="collapse_machine_learning_0">
                                     machine_learning_0 Temp Holder
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse_machine_learning_0" class="collapse" aria-labelledby="machine_learning_0" data-parent="#machine_learning_accordion">
+                        <div id="collapse_machine_learning_0" class="collapse" aria-labelledby="machine_learning_0"
+                            data-parent="#machine_learning_accordion">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                                 squid. 3 wolf
@@ -427,17 +490,19 @@
                             </div>
                         </div>
                     </div>
-            
+
                     <div class="card">
                         <div class="card-header" id="machine_learning_1">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_machine_learning_1"
-                                    aria-expanded="false" aria-controls="collapse_machine_learning_1">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse_machine_learning_1" aria-expanded="false"
+                                    aria-controls="collapse_machine_learning_1">
                                     machine_learning_1 Temp Holder
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse_machine_learning_1" class="collapse" aria-labelledby="machine_learning_1" data-parent="#machine_learning_accordion">
+                        <div id="collapse_machine_learning_1" class="collapse" aria-labelledby="machine_learning_1"
+                            data-parent="#machine_learning_accordion">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                                 squid. 3 wolf
@@ -454,17 +519,19 @@
                             </div>
                         </div>
                     </div>
-            
+
                     <div class="card">
                         <div class="card-header" id="machine_learning_2">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_machine_learning_2"
-                                    aria-expanded="false" aria-controls="collapse_machine_learning_2">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse_machine_learning_2" aria-expanded="false"
+                                    aria-controls="collapse_machine_learning_2">
                                     machine_learning_2 Temp Holder
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse_machine_learning_2" class="collapse" aria-labelledby="machine_learning_2" data-parent="#machine_learning_accordion">
+                        <div id="collapse_machine_learning_2" class="collapse" aria-labelledby="machine_learning_2"
+                            data-parent="#machine_learning_accordion">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                                 squid. 3 wolf
@@ -481,9 +548,9 @@
                             </div>
                         </div>
                     </div>
-            
+
                 </div>
-            <hr>
+                <hr>
             </div>
         </div>
     </div>
@@ -502,17 +569,19 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="web_dev_accordion">
-    
+
                     <div class="card">
                         <div class="card-header" id="web_dev_0">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_web_dev_0"
-                                    aria-expanded="false" aria-controls="collapse_web_dev_0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse_web_dev_0" aria-expanded="false"
+                                    aria-controls="collapse_web_dev_0">
                                     web_dev_0 Temp Holder
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse_web_dev_0" class="collapse" aria-labelledby="web_dev_0" data-parent="#web_dev_accordion">
+                        <div id="collapse_web_dev_0" class="collapse" aria-labelledby="web_dev_0"
+                            data-parent="#web_dev_accordion">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                                 squid. 3 wolf
@@ -529,17 +598,19 @@
                             </div>
                         </div>
                     </div>
-            
+
                     <div class="card">
                         <div class="card-header" id="web_dev_1">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_web_dev_1"
-                                    aria-expanded="false" aria-controls="collapse_web_dev_1">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse_web_dev_1" aria-expanded="false"
+                                    aria-controls="collapse_web_dev_1">
                                     web_dev_1 Temp Holder
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse_web_dev_1" class="collapse" aria-labelledby="web_dev_1" data-parent="#web_dev_accordion">
+                        <div id="collapse_web_dev_1" class="collapse" aria-labelledby="web_dev_1"
+                            data-parent="#web_dev_accordion">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                                 squid. 3 wolf
@@ -556,17 +627,19 @@
                             </div>
                         </div>
                     </div>
-            
+
                     <div class="card">
                         <div class="card-header" id="web_dev_2">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_web_dev_2"
-                                    aria-expanded="false" aria-controls="collapse_web_dev_2">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse_web_dev_2" aria-expanded="false"
+                                    aria-controls="collapse_web_dev_2">
                                     web_dev_2 Temp Holder
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse_web_dev_2" class="collapse" aria-labelledby="web_dev_2" data-parent="#web_dev_accordion">
+                        <div id="collapse_web_dev_2" class="collapse" aria-labelledby="web_dev_2"
+                            data-parent="#web_dev_accordion">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                                 squid. 3 wolf
@@ -583,17 +656,19 @@
                             </div>
                         </div>
                     </div>
-            
+
                     <div class="card">
                         <div class="card-header" id="web_dev_3">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_web_dev_3"
-                                    aria-expanded="false" aria-controls="collapse_web_dev_3">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse_web_dev_3" aria-expanded="false"
+                                    aria-controls="collapse_web_dev_3">
                                     web_dev_3 Temp Holder
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse_web_dev_3" class="collapse" aria-labelledby="web_dev_3" data-parent="#web_dev_accordion">
+                        <div id="collapse_web_dev_3" class="collapse" aria-labelledby="web_dev_3"
+                            data-parent="#web_dev_accordion">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                                 squid. 3 wolf
@@ -610,17 +685,19 @@
                             </div>
                         </div>
                     </div>
-            
+
                     <div class="card">
                         <div class="card-header" id="web_dev_4">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_web_dev_4"
-                                    aria-expanded="false" aria-controls="collapse_web_dev_4">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse_web_dev_4" aria-expanded="false"
+                                    aria-controls="collapse_web_dev_4">
                                     web_dev_4 Temp Holder
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse_web_dev_4" class="collapse" aria-labelledby="web_dev_4" data-parent="#web_dev_accordion">
+                        <div id="collapse_web_dev_4" class="collapse" aria-labelledby="web_dev_4"
+                            data-parent="#web_dev_accordion">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                                 squid. 3 wolf
@@ -637,9 +714,9 @@
                             </div>
                         </div>
                     </div>
-            
+
                 </div>
-            <hr>
+                <hr>
             </div>
         </div>
     </div>
@@ -658,17 +735,19 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="web_automation_accordion">
-    
+
                     <div class="card">
                         <div class="card-header" id="web_automation_0">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_web_automation_0"
-                                    aria-expanded="false" aria-controls="collapse_web_automation_0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse_web_automation_0" aria-expanded="false"
+                                    aria-controls="collapse_web_automation_0">
                                     web_automation_0 Temp Holder
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse_web_automation_0" class="collapse" aria-labelledby="web_automation_0" data-parent="#web_automation_accordion">
+                        <div id="collapse_web_automation_0" class="collapse" aria-labelledby="web_automation_0"
+                            data-parent="#web_automation_accordion">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                                 squid. 3 wolf
@@ -685,17 +764,19 @@
                             </div>
                         </div>
                     </div>
-            
+
                     <div class="card">
                         <div class="card-header" id="web_automation_1">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_web_automation_1"
-                                    aria-expanded="false" aria-controls="collapse_web_automation_1">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse_web_automation_1" aria-expanded="false"
+                                    aria-controls="collapse_web_automation_1">
                                     web_automation_1 Temp Holder
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse_web_automation_1" class="collapse" aria-labelledby="web_automation_1" data-parent="#web_automation_accordion">
+                        <div id="collapse_web_automation_1" class="collapse" aria-labelledby="web_automation_1"
+                            data-parent="#web_automation_accordion">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                                 squid. 3 wolf
@@ -712,9 +793,9 @@
                             </div>
                         </div>
                     </div>
-            
+
                 </div>
-            <hr>
+                <hr>
             </div>
         </div>
     </div>
