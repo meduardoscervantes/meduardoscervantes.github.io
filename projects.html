@@ -211,42 +211,75 @@
                                 <p>
                                     This project is seperated into two parts: PyBank & PyPoll
                                 </p>
-                                <h5>PyBank</h5>
+                                <h5><a class="tertiary" href="https://github.com/meduardoscervantes/python-challenge/tree/main/PyBank"
+                                    target="_blank" rel="noopener noreferrer">PyBank</a></h5>
                                 <p>
                                     In here we utilize Python's <i>with open</i> to read a CSV file.
-                                    After reading in the data, the script 
+                                    After reading in the data, the script will parse through and locate values within the file.
+                                    The final outcome gets the difference from month to month, find the greatest difference in between months, and the smallest difference between months.
+                                    If I were to go back and do this project again, I would definitely utililze Pandas, as well as Pythons min() and max() functions.
+                                    
+                                </p>
+                                <h5><a class="tertiary" href="https://github.com/meduardoscervantes/python-challenge/tree/main/PyPoll"
+                                    target="_blank" rel="noopener noreferrer">PyPoll</a></h5>
+                                <p>
+                                    In here we once again utilize Python's <i>with open</i> to read a CSV file.
+                                    After reading in the data, the script will parse through and locate values within the file.
+                                    In particular, we are looking for the unique voter registration number, candidate name, and county they are voting from.
+                                    The final outcome is what a polling site would do, tally up the total votes, analyze the percentage of votes from the total population, and declare a winner.
+                                    If I were to go back and do this project again, I would definitely utililze Pandas, as well as Pythons min() and max() functions.
+                                    Also, I would optimize for the program to run more than once...
+                                    As is stands, it runs once and creates the folders and file locations without checking if they exist.
                                 </p>
                                 <a class="tertiary" href="https://github.com/meduardoscervantes/python-challenge"
                                     target="_blank" rel="noopener noreferrer">Checkout the work here!</a>
                             </div>
                         </div>
                     </div>
-
                     <div class="card">
                         <div class="card-header" id="python_1">
                             <h5 class="mb-0">
                                 <button class="btn btn-link collapsed" data-toggle="collapse"
                                     data-target="#collapse_python_1" aria-expanded="false"
                                     aria-controls="collapse_python_1">
-                                    python_1 Temp Holder
+                                    Pandas
                                 </button>
                             </h5>
                         </div>
                         <div id="collapse_python_1" class="collapse" aria-labelledby="python_1"
                             data-parent="#python_accordion">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid. 3 wolf
-                                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                                laborum eiusmod.
-                                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                                assumenda
-                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                                nesciunt sapiente ea
-                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                farm-to-table, raw denim
-                                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                                VHS.
+                                <p>
+                                    This is the Heroes of Pymoli challenge. 
+                                    This project reads in data from a fictional game, "Heroes of Pymoli"/
+                                    To view columns from the data set:
+                                    <a class="tertiary" data-toggle="collapse" href="#pymoli_columns"
+                                            role="button" aria-expanded="false" aria-controls="pymoli_columns">
+                                            Toggle Columns
+                                    </a>
+                                    <div class="collapse" id="pymoli_columns">
+                                        <div class="card card-body">
+                                            <ul>
+                                                <li>Purchase ID - int</li>
+                                                <li>SN - Screen Name - str</li>
+                                                <li>Age - int</li>
+                                                <li>Gender - Male, Female, Other - str</li>
+                                                <li>Item ID - int</li>
+                                                <li>Price - double</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    Finally, the data handling super tool, Pandas.
+                                    Pandas allows this project to read in the data from the CSV file and utilize DataFrames to perform rapid analysis.
+                                </p>
+                                <p>
+                                    There is in-depth player analysis.
+                                    With the data provided we are able to see popular gender demographics, age of the average user, and the users with the most money spent in the game.
+                                    Furthermore, Pandas allows us to identify the popularity of items in the game. 
+                                    We can see the most popular items with which age group, gender, and purchasing history of users.
+                                </p>
+                                <a class="tertiary" href="https://github.com/meduardoscervantes/pandas-challenge"
+                                    target="_blank" rel="noopener noreferrer">Checkout the work here!</a>
                             </div>
                         </div>
                     </div>
@@ -257,25 +290,66 @@
                                 <button class="btn btn-link collapsed" data-toggle="collapse"
                                     data-target="#collapse_python_2" aria-expanded="false"
                                     aria-controls="collapse_python_2">
-                                    python_2 Temp Holder
+                                    Pandas and Matplotlib
                                 </button>
                             </h5>
                         </div>
                         <div id="collapse_python_2" class="collapse" aria-labelledby="python_2"
                             data-parent="#python_accordion">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid. 3 wolf
-                                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                                laborum eiusmod.
-                                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                                assumenda
-                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                                nesciunt sapiente ea
-                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                farm-to-table, raw denim
-                                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                                VHS.
+                                <p>
+                                    This is the Pymaceuticals challenge. 
+                                    This project reads in data from two CSV files which eventtaully refer to each other.
+                                    To view columns from the metadata set:
+                                </p>
+                                <p>
+                                    <a class="tertiary" data-toggle="collapse" href="#pymaceuticals_columns"
+                                            role="button" aria-expanded="false" aria-controls="pymaceuticals_columns">
+                                            Toggle metadata Columns:
+                                    </a>
+                                    <div class="collapse" id="pymaceuticals_columns">
+                                        <div class="card card-body">
+                                            <ul>
+                                                <li>Mouse ID - str</li>
+                                                <li>Drug Regimen - Cancer treatment company name - str</li>
+                                                <li>Sex - Male/Female - str</li>
+                                                <li>Age_months - int</li>
+                                                <li>Weight (g) - grams - int</li>
+                                                <li>Price - double</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </p>
+                                <p>
+                                    <a class="tertiary" data-toggle="collapse" href="#pymaceuticals_columns_results"
+                                            role="button" aria-expanded="false" aria-controls="pymaceuticals_columns_results">
+                                            Toggle study result dataset Columns:
+                                    </a>
+                                    <div class="collapse" id="pymaceuticals_columns_results">
+                                        <div class="card card-body">
+                                            <ul>
+                                                <li>Mouse ID - str</li>
+                                                <li>Timepoint - Time taken from lab i nminutes - int</li>
+                                                <li>Tumor Volume (mm3) - Size of the tumor - int</li>
+                                                <li>Metastatic Sites - int</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </p>
+                                <p>
+                                    The project utilizes ETL to perform its analysis.
+                                    The exctract phase was quite simple as the data was provided to me in a comma delimitted format.
+                                    The Transform phase was not the same.
+                                    To ensure the data is pure, I looked at the study results to ensure there is no duplicate data for any of the subjects.
+                                    Unfortunately, there was some flawed data and had to be purged to ensure consistent data for the other subjects.
+                                    Finally the load phase was to return the data back into a CSV file.
+                                    Quite simple while utilizing Pandas.
+                                </p>
+                                <p>
+                                    TODO: THIS IS A STOPPING POINT AND NEED TO EXPLAIN THE ANALYSIS AND USAGES OF MATPLOTLIB
+                                </p>
+                                <a class="tertiary" href="https://github.com/meduardoscervantes/pandas-challenge"
+                                    target="_blank" rel="noopener noreferrer">Checkout the work here!</a>
                             </div>
                         </div>
                     </div>
