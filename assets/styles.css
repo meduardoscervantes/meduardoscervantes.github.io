@@ -4704,11 +4704,11 @@ a.close.disabled {
   vertical-align: text-top !important; }
 
 .tertiary {
-  color: #ffffff;
+  color: var(--dark);
   text-decoration: none;
   background-color: transparent; }
   .tertiary:hover {
-    color: var(--dark);
+    color: #ffffff;
     text-decoration: underline; }
 
 .bg-primary {
