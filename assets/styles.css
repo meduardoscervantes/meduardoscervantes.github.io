@@ -408,7 +408,13 @@ mark,
   padding-right: 1%;
   padding-bottom: 1%;
 }
-
+.img-fluid-index-picture{
+  max-width: 30%;
+  height: auto;
+  padding: auto;
+  padding-right: 1%;
+  padding-bottom: 1%;
+}
 .img-fluid {
   max-width: 100%;
   height: auto; }
